@@ -1,0 +1,71 @@
+{
+  "builder_name": "ai2_arc",
+  "citation": "@article{allenai:arc,\n      author    = {Peter Clark  and Isaac Cowhey and Oren Etzioni and Tushar Khot and\n                    Ashish Sabharwal and Carissa Schoenick and Oyvind Tafjord},\n      title     = {Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge},\n      journal   = {arXiv:1803.05457v1},\n      year      = {2018},\n}\n",
+  "config_name": "ARC-Challenge",
+  "dataset_size": 821931,
+  "description": "A new dataset of 7,787 genuine grade-school level, multiple-choice science questions, assembled to encourage research in\n advanced question-answering. The dataset is partitioned into a Challenge Set and an Easy Set, where the former contains\n only questions answered incorrectly by both a retrieval-based algorithm and a word co-occurrence algorithm. We are also\n including a corpus of over 14 million science sentences relevant to the task, and an implementation of three neural baseline models for this dataset. We pose ARC as a challenge to the community.\n",
+  "download_checksums": {
+    "https://s3-us-west-2.amazonaws.com/ai2-website/data/ARC-V1-Feb2018.zip": {
+      "num_bytes": 680841265,
+      "checksum": null
+    }
+  },
+  "download_size": 680841265,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "choices": {
+      "feature": {
+        "text": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "label": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "Sequence"
+    },
+    "answerKey": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://allenai.org/data/arc",
+  "license": "",
+  "size_in_bytes": 681663196,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 349760,
+      "num_examples": 1119,
+      "dataset_name": "ai2_arc"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 375511,
+      "num_examples": 1172,
+      "dataset_name": "ai2_arc"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 96660,
+      "num_examples": 299,
+      "dataset_name": "ai2_arc"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

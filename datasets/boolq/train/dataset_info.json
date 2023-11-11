@@ -1,0 +1,55 @@
+{
+  "builder_name": "boolq",
+  "citation": "@inproceedings{clark2019boolq,\n  title =     {BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions},\n  author =    {Clark, Christopher and Lee, Kenton and Chang, Ming-Wei, and Kwiatkowski, Tom and Collins, Michael, and Toutanova, Kristina},\n  booktitle = {NAACL},\n  year =      {2019},\n}\n",
+  "config_name": "default",
+  "dataset_size": 7827766,
+  "description": "BoolQ is a question answering dataset for yes/no questions containing 15942 examples. These questions are naturally\noccurring ---they are generated in unprompted and unconstrained settings.\nEach example is a triplet of (question, passage, answer), with the title of the page as optional additional context.\nThe text-pair classification setup is similar to existing natural language inference tasks.\n",
+  "download_checksums": {
+    "https://storage.googleapis.com/boolq/train.jsonl": {
+      "num_bytes": 6525813,
+      "checksum": null
+    },
+    "https://storage.googleapis.com/boolq/dev.jsonl": {
+      "num_bytes": 2238726,
+      "checksum": null
+    }
+  },
+  "download_size": 8764539,
+  "features": {
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "passage": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://github.com/google-research-datasets/boolean-questions",
+  "license": "",
+  "size_in_bytes": 16592305,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 5829584,
+      "num_examples": 9427,
+      "dataset_name": "boolq"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1998182,
+      "num_examples": 3270,
+      "dataset_name": "boolq"
+    }
+  },
+  "version": {
+    "version_str": "0.1.0",
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  }
+}
