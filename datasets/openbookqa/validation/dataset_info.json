@@ -1,8 +1,8 @@
 {
   "builder_name": "openbookqa",
   "citation": "@inproceedings{OpenBookQA2018,\n title={Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering},\n author={Todor Mihaylov and Peter Clark and Tushar Khot and Ashish Sabharwal},\n booktitle={EMNLP},\n year={2018}\n}\n",
-  "config_name": "main",
-  "dataset_size": 1082573,
+  "config_name": "additional",
+  "dataset_size": 1555194,
   "description": "OpenBookQA aims to promote research in advanced question-answering, probing a deeper understanding of both the topic\n(with salient facts summarized as an open book, also provided with the dataset) and the language it is expressed in. In\nparticular, it contains questions that require multi-step reasoning, use of additional common and commonsense knowledge,\nand rich text comprehension.\nOpenBookQA is a new kind of question-answering dataset modeled after open book exams for assessing human understanding\nof a subject.\n",
   "download_checksums": {
     "https://s3-us-west-2.amazonaws.com/ai2-website/data/OpenBookQA-V1-Sep2018.zip": {
@@ -36,27 +36,43 @@
     "answerKey": {
       "dtype": "string",
       "_type": "Value"
+    },
+    "fact1": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "humanScore": {
+      "dtype": "float32",
+      "_type": "Value"
+    },
+    "clarity": {
+      "dtype": "float32",
+      "_type": "Value"
+    },
+    "turkIdAnonymized": {
+      "dtype": "string",
+      "_type": "Value"
     }
   },
   "homepage": "https://allenai.org/data/open-book-qa",
   "license": "",
-  "size_in_bytes": 2528671,
+  "size_in_bytes": 3001292,
   "splits": {
     "train": {
       "name": "train",
-      "num_bytes": 895386,
+      "num_bytes": 1288577,
       "num_examples": 4957,
       "dataset_name": "openbookqa"
     },
     "validation": {
       "name": "validation",
-      "num_bytes": 95428,
+      "num_bytes": 135916,
       "num_examples": 500,
       "dataset_name": "openbookqa"
     },
     "test": {
       "name": "test",
-      "num_bytes": 91759,
+      "num_bytes": 130701,
       "num_examples": 500,
       "dataset_name": "openbookqa"
     }
